@@ -13,7 +13,7 @@ from skimage import io, color
 # 0 for HD(if connected, otherwise internal), 1 for internal (if HD connected)
 cap = cv2.VideoCapture(0)
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
-out = cv2.VideoWriter('output2.avi',fourcc, 30.0, (640,480))
+out = cv2.VideoWriter('output.avi',fourcc, 30.0, (640,480))
 
 # Create the haar cascade - used for lighting and stuff
 cascPath = "haarcascade_frontalface_default.xml"
